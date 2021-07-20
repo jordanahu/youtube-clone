@@ -121,6 +121,7 @@ class View{
               //DARK THEME FOR SEARCH RESULTS
             let searchTitles = controller.select(".dynamicTitle", "all");
             let searchViews = controller.select(".dynamicViews", "all");
+            let searchResults = controller.select(".searchResults");
            
             let checkDarkThemeOnNavbar = nav.classList.contains("darkThemeBackground");
    
@@ -132,10 +133,12 @@ class View{
             searchTitles.forEach(title=>{
                 title.classList.add("darkThemeTitle");
             });
+            
+            searchResults.classList.add("darkThemeBackground");
         
         }
 
-        let checkDarkThemeOnSearchResults = searchViews[0].classList.contains("darkThemeViews");
+        let checkDarkThemeOnSearchResults = searchViews[0] && searchViews[0].classList.contains("darkThemeViews");
 
         if(!checkDarkThemeOnNavbar && checkDarkThemeOnSearchResults){
             searchViews.forEach(view=>{
@@ -145,6 +148,8 @@ class View{
             searchTitles.forEach(title=>{
                 title.classList.remove("darkThemeTitle");
             });
+            
+            searchResults.classList.remove("darkThemeBackground");
         
     }
     }
