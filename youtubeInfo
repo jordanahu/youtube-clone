@@ -1,0 +1,66 @@
+ICONS
+youtube-icon: <i class='bx bxl-youtube'></i>
+menu: <i class='bx bx-menu'></i>
+home: <i class='bx bxs-home' ></i>
+compass: <i class='bx bxs-compass'></i>
+
+subscriptions:<svg class="MuiSvgIcon-root sideBarRow__icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8H4V6h16v2zm-2-6H6v2h12V2zm4 10v8c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-8c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2zm-6 4l-6-3.27v6.53L16 16z"></path></svg>
+
+vertical-dots:<i class='bx bx-dots-vertical-rounded' ></i>
+video-plus:<i class='bx bxs-video-plus'></i>
+bell:<i class='bx bxs-bell'></i>
+grid:<i class='bx bxs-grid'></i>
+history:<i class='bx bx-history' ></i>
+video:<i class='bx bx-video' ></i>
+library:<i class='bx bxs-videos' ></i>
+watch later:<i class='bx bxs-time-five' ></i>
+search icon:<i class='bx bx-search-alt-2' ></i>
+microphone:<i class='bx bxs-microphone' ></i>
+brightness:<i class='bx bxs-brightness-half' ></i>
+
+width="560" height="315"
+SPECS
+
+width of thumbnail:319.98px by 179.53px;
+grey background color:rgb(96, 96, 96)
+
+color of caption:rgb(170, 170, 170)
+font-size of caption:14px
+size of profile(for video):36px
+background color of duration text:rgba(0, 0, 0, 0);
+
+width of search bar:65px
+
+
+
+
+
+rgb(251,192,48) ad
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

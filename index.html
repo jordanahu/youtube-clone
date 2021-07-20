@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JamYouTube</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/8cab6c66/img/favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- navbar -->
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <span class="navbar__logo__menu"><i class='bx bx-menu'></i></span>
+                <img class="navbar__logo__name" src="https://download.logo.wine/logo/YouTube/YouTube-Logo.wine.png" alt="youtube-logo">
+            </div>
+            <div class="navbar__search">
+                <div class="navbar__search__icon">
+                    <input type="search" placeholder="Search">
+                    <span class="search__icon"><i class='bx bx-search-alt-2' ></i></span>
+                </div>
+                <span class="navbar__search__mic"><i class='bx bxs-microphone' ></i></span>
+
+            </div>
+            <div class="navbar__options">
+                <span><i class='bx bxs-grid'></i></span>
+                <div class="navbar__options__darktheme">
+                    <span class="navbar__options__menu"><i class='bx bx-dots-vertical-rounded' ></i></span>
+                    <div class="navbar__options__darktheme__options">
+                        <span>Dark Theme</span>
+                        <div class="darkthemebtns">
+                            <button class="darkon">ON</button>
+                           <button class="darkoff">OFF</button>
+                        </div>
+                    </div>
+                </div>
+                <span class="navbar__optons__user"><i class='bx bxs-user-circle'></i></span>
+            </div>
+        </nav>
+        <!-- main -->
+
+        <main class="content">
+            
+                <aside class="content__side">
+                    <div class="content__side__home">
+                        <span> <i class='bx bxs-home' ></i></span>
+                        <a href="#">Home</a>
+                    </div>
+                    <div>
+                        <span> <i class='bx bxs-compass'></i></span>
+                        <a href="#">Explore</a>
+                    </div>
+                    <div class="content__side__subs">
+                        <svg class="MuiSvgIcon-root sideBarRow__icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8H4V6h16v2zm-2-6H6v2h12V2zm4 10v8c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-8c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2zm-6 4l-6-3.27v6.53L16 16z"></path></svg>
+                        <a href="#">Subscriptions</a>
+                    </div>
+                    <div>
+                        <span> <i class='bx bxs-videos' ></i></span>
+                        <a href="#">Library</a>
+                    </div>
+                    <div class="content__side__hist">
+                        <span> <i class='bx bx-history' ></i></span>
+                        <a href="#">History</a>
+                    </div>
+                </aside>
+          
+            <section class="searchResults"></section>
+
+            <section class="content__videos">
+                <div class="content__videos__video">
+                    <img class="ad" src="https://clone-2937d.web.app/static/media/winner.24049d6b.jpg" alt="Jordan's Quiz Competition Image"></img>
+                    <div class="content__videos__video__caption">
+                        <img src="https://nsmq.com.gh/wp-content/uploads/2016/05/NSMQ.png" class="content__videos__video__caption__profile" alt="">
+                        <div class=content__videos__video__caption__info>
+                            <p class="content__videos__video__caption__info__title">
+                                AKATSI SNR HIGH TECHNICAL SCHOOL wins 2017 Science And Maths Quiz Competition
+                            </p>
+                            <div class="content__videos__video__caption__info__views">
+                                <p>NATIONAL SCIENCE AND MATHS QUIZ</p>
+                                <span class="views">100M views</span><span class="duration">5 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                </div>
+
+            
+                <div class="content__videos__video">
+                    <iframe class="ad" src="https://www.youtube.com/embed/g3KBSffPx4g?rel=0" allowfullscreen></iframe>
+                    <div class="content__videos__video__caption">
+                        <img src="https://yt3.ggpht.com/ytc/AAUvwniyT91VYICSIG8jKwkTXm3DCGcIMuFMHdFsUjDN0g=s68-c-k-c0x00ffffff-no-rj" class="content__videos__video__caption__profile" alt="">
+                        <div class=content__videos__video__caption__info>
+                            <p class="content__videos__video__caption__info__title">
+                                Watch this funny African video
+                            </p>
+                            <div class="content__videos__video__caption__info__views">
+                                <p>Mark Angel Comedy</p>
+                                <span class="views">42M views</span><span class="duration">2 months ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__videos__video">
+                    <iframe class="ad" src="https://www.youtube.com/embed/d9L2-1h2Z48?rel=0" allowfullscreen></iframe>
+                    <div class="content__videos__video__caption">
+                        <img src="https://yt3.ggpht.com/ytc/AAUvwngZ4gL_l_cyFSEFieSoBEju0jvJnXG2SQMMl_o7Jg=s48-c-k-c0x00ffffff-no-rj" class="content__videos__video__caption__profile" alt="">
+                        <div class=content__videos__video__caption__info>
+                            <p class="content__videos__video__caption__info__title">
+                                How To Access Your Files On A Broken Phone's Screen 
+                            </p>
+                            <div class="content__videos__video__caption__info__views">
+                                <p>Ayim Nelson(My friend)</p>
+                                <span class="views">1B views</span><span class="duration">1 year ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__videos__video">
+                    <iframe class="ad" src="https://www.youtube.com/embed/ap90npnxZzs?rel=0" allowfullscreen></iframe>
+                    <div class="content__videos__video__caption">
+                        <img src="https://yt3.ggpht.com/ytc/AAUvwnj437YDzAzreViXP_QtaP2VTqXo18Y9DuOaasJtRQ=s48-c-k-c0x00ffffff-no-rj" class="content__videos__video__caption__profile" alt="">
+                        <div class=content__videos__video__caption__info>
+                            <p class="content__videos__video__caption__info__title">
+                               Pink Pantherrr!!! Yesss!!!
+                            </p>
+                            <div class="content__videos__video__caption__info__views">
+                                <p>Pink Pather</p>
+                                <span class="views">504k views</span><span class="duration">1 week ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__videos__video">
+                    <iframe class="ad" src="https://www.youtube.com/embed/jdpmOxtUBqE?rel=0" allowfullscreen></iframe>
+                    <div class="content__videos__video__caption">
+                        <img src="https://yt3.ggpht.com/ytc/AAUvwnjg6ZYi6gGIrqeeCiJQULNmzc9USImsNyjrbBsCXg=s48-c-k-c0x00ffffff-no-rj" class="content__videos__video__caption__profile" alt="">
+                        <div class=content__videos__video__caption__info>
+                            <p class="content__videos__video__caption__info__title">
+                               Learn persian with Jordan😂️😂️😂️😂️
+                            </p>
+                            <div class="content__videos__video__caption__info__views">
+                                <p>Learn persian</p>
+                                <span class="views">104k views</span><span class="duration">5 weeks ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__videos__video">
+                    <iframe class="ad" src="https://www.youtube.com/embed/2x85khx-Cl4?rel=0" allowfullscreen></iframe>
+                    <div class="content__videos__video__caption">
+                        <img src="https://yt3.ggpht.com/1Q7FXOCspVt7oMNa0dwE4wQ3qjReReoSqV0zKOfitD0sHApxd0b0WgUcO514nS-kel8PNA4leAs=s48-c-k-c0x00ffffff-no-rj" class="content__videos__video__caption__profile" alt="">
+                        <div class=content__videos__video__caption__info>
+                            <p class="content__videos__video__caption__info__title">
+                                Dom Dee Tomato Parkour
+                            </p>
+                            <div class="content__videos__video__caption__info__views">
+                                <p>Dom Tomato</p>
+                                <span class="views">10M views</span><span class="duration">2 weeks ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__videos__video">
+                    <iframe class="ad" src="https://www.youtube.com/embed/VrTC3FHE8No?rel=0" allowfullscreen></iframe>
+                    <div class="content__videos__video__caption">
+                        <img src="https://yt3.ggpht.com/ytc/AAUvwngo4chDDJX4rkdkybNruT_3MqEoOtirv1Ry-lAOFec=s48-c-k-c0x00ffffff-no-rj-mo" class="content__videos__video__caption__profile" alt="">
+                        <div class=content__videos__video__caption__info>
+                            <p class="content__videos__video__caption__info__title">
+                                The Way You Make Me Feel
+                            </p>
+                            <div class="content__videos__video__caption__info__views">
+                                <p>Michael Jackson</p>
+                                <span class="views">550M views</span><span class="duration">9 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="content__videos__video">
+                    <iframe class="ad" src="https://www.youtube.com/embed/w3Wluvzoggg?rel=0" allowfullscreen></iframe>
+                    <div class="content__videos__video__caption">
+                        <img src="
+                        https://yt3.ggpht.com/ytc/AAUvwnis1G8EkhYCMf1vTX7mdUhIPiaKs1hIcp_kbuB62A=s68-c-k-c0x00ffffff-no-rj" class="content__videos__video__caption__profile" alt="">
+                        <div class=content__videos__video__caption__info>
+                            <p class="content__videos__video__caption__info__title">
+                                Tom and Jerryyy. Jam's favorite childhood cartoons.
+                            </p>
+                            <div class="content__videos__video__caption__info__views">
+                                <p>WB kids</p>
+                                <span class="views">500M views</span><span class="duration">3 weeks ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+       
+        
+        
+    </div>
+</body>
+</html>
